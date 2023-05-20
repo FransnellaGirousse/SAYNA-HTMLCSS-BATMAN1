@@ -309,6 +309,18 @@ form input[type='submit']
   padding: 15px 0;
   cursor: pointer;
 }
+.form textarea
+{
+    display: block;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+    outline: none;
+}
 /* Design de la partie citation */
 #citation
 {
