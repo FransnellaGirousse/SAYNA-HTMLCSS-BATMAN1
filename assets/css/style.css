@@ -15,6 +15,7 @@
     --gradiant-white: #eddebf67;
     --gradiant-red: #8900097e;
     --black-color:#000000;
+    --gris-color:#C4C4C4;
 
 }
 * 
@@ -30,7 +31,7 @@ h1
     font-size: 36px;
     font-weight: 400;
 }
-button 
+button
 {
     font-family: "Rajdhani", sans-serif;
     font-size: 20px;
@@ -56,12 +57,12 @@ body
     flex-direction: column;
     align-items: center;
     position: fixed;
-    right: 80px;
+    right: 50px;
     top: 230px;
 }
 .scroll .social
 {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 /* Design de la navigation */
 nav
@@ -82,13 +83,21 @@ nav ul a
     font-family: 'rajdhani';
     font-weight: 500;
 }
+/* les survoles */
 nav ul a:hover 
 {
     color: var(--yellow-color);
 }
+ .logo:hover,
+ .icon:hover,
+ .social:hover,
+ .social-item:hover
+ {
+     filter: invert(18%) sepia(82%) saturate(4658%) hue-rotate(355deg) brightness(109%) contrast(112%);
+ }
 
 /* Design partie en tete hero */
-.hero
+#hero
 {
     background-image: url('../Illustrations/Bathome1.png');
     height: 900px;
@@ -169,7 +178,36 @@ nav ul a:hover
     text-align: center;
     margin-top: 10px;
 }
+.batman-item:hover
+{
+    transform: scale(1.1);
+}
+.nemesis1
+{
+    display: flex;
+    align-items: center;
+}
+.nemesis1 img 
+{
+    width: 18%;
+}
 /* Design multimedia */
+#multimedia button
+{
+    position: relative;
+    top: 160px;
+    background: none;
+    border:none;
+} 
+button.right
+{
+    right: -85%;
+}
+.yellow
+{
+    color: var(--yellow-color);
+}
+
 .slider-multimedia
 {
     display: flex;
@@ -179,12 +217,168 @@ nav ul a:hover
 .slider-image
 {
     width: 100%;
+    
 }
 .slider-content
 {
     padding: 15px;
+    background: linear-gradient(160deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4) 60%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 12px;
 }
 #multimedia p
 {
     font-size: 12px;
+}
+/* Design de la partie formulaire */
+#contact
+{
+    padding: 70px 0;
+    background: linear-gradient(143deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4) 80%);
+}
+.form
+{
+    width: 50%;
+    margin: 0 auto;
+}
+#contact h2
+{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+.titre
+{
+    display: block;
+    margin: 30px 0;
+}
+.form input[type="email"]
+{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid rgb(120, 120, 120);
+    background-color: transparent;
+    padding: 3px 0;
+    color: var(--white-color);
+}
+.icone img
+{
+    transform: rotate(-90deg);
+    width: 15px;
+}
+.news
+{
+    margin-top: 15px;
+    border-bottom: 2px solid rgb(120, 120, 120);
+    width: 100%;
+}
+::placeholder
+{
+    font-size: 15px;
+}
+.btn-group
+{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+form input[type="radio"]
+{
+    opacity: 0;
+}
+.btn-group label
+{
+     cursor: pointer;
+     border: 2px solid;
+     border-image: linear-gradient(69deg, 
+     rgba(237, 222, 191, 0.4),
+      rgba(25, 88, 125, 0.4))1;
+    padding: 10px;
+    font-size: 12px;
+}
+form input[type='submit'] 
+{
+  margin: 35px auto;
+  display: block;
+  width: 200px;
+  border: none;
+  padding: 15px 0;
+  cursor: pointer;
+}
+/* Design de la partie citation */
+#citation
+{
+    margin: 90px;
+}
+.citation-carte 
+{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.citation-auteur
+{
+    font-size: 12px;
+    margin-top: 30px;
+}
+.citation-carte
+{
+    padding: 40px;
+     font-family: 'Space Grotesk';
+    font-size: 18px;
+}
+.guillemet-close {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+/* Design partie footer */
+footer 
+{
+    margin-top: 102px;
+}
+.text-footer 
+{
+    text-align: center;
+    font-size: 12px;
+}
+.social-footer 
+{
+    text-align: center;
+    margin: 50px 0;
+}
+.social-item 
+{
+    padding: 20px;
+}
+/* Les barres dans le HTML */
+.up-bar 
+{
+    border-top: 2px solid rgba(188, 188, 188, 0.5);
+    position: absolute;
+    width: 85%;
+    top: 132px;
+    left: 102px;
+}
+
+.left-bar 
+{
+    position: absolute;
+    border-left: 2px solid rgba(188, 188, 188, 0.5);
+    left: 102px;
+    height: 1150%;
+}
+
+.right-bar 
+{
+    position: absolute;
+    border-right: 2px solid rgba(188, 188, 188, 0.5);
+    right: 102px;
+    height: 1150%;
 }
