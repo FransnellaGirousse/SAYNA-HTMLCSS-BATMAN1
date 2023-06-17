@@ -171,7 +171,7 @@ nav ul a:hover
     text-align: justify;
     width: 80%;
     font-size: 18px;
-        line-height: 28px;
+    line-height: 28px;
 }
 .personnage-info 
 {
@@ -384,7 +384,7 @@ footer
     position: absolute;
     border-left: 2px solid rgba(188, 188, 188, 0.5);
     left: 102px;
-    height: 1150%;
+    height: 1270%;
 }
 
 .right-bar 
@@ -392,5 +392,5 @@ footer
     position: absolute;
     border-right: 2px solid rgba(188, 188, 188, 0.5);
     right: 102px;
-    height: 1150%;
+    height: 1270%;
 }
